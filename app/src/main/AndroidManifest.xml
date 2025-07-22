@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
-	package="com.chevstrap.rbx">
+	package="com.mobstrap.rbx">
 
 	<!-- Visibility for specific apps (Android 11+) -->
 	<queries>
@@ -32,6 +32,7 @@
 		<!-- Main Activity -->
 		<activity
 			android:name=".MainActivity"
+			android:screenOrientation="landscape"
 			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
 			android:hardwareAccelerated="true"
 			android:supportsPictureInPicture="true"
@@ -44,7 +45,7 @@
 			</intent-filter>
 		</activity>
 
-		<!-- Other Activities -->
+		<!-- Settings Activity -->
 		<activity
 			android:name=".SettingsActivity"
 			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
